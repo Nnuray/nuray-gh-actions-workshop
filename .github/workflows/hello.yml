@@ -9,3 +9,12 @@ jobs:
     steps:
       - name: Greet the User
         run: echo "Hello World!"
+        
+      - name: List files in directory
+        run: ls -l
+
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+      - name: List files after checkout
+        run: ls -l
